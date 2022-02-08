@@ -1,2 +1,3 @@
-# nextjs
-Nextjs examples
+# monoJS
+monorepo JS
+
