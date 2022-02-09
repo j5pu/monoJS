@@ -16,9 +16,6 @@
 [submodule "platforms"]
 	path = modules/platforms
 	url = https://github.com/vercel/platforms.git
-[submodule "install-node"]
-	path = modules/install-node
-	url = https://github.com/vercel/install-node.git
 [submodule "static-fun"]
 	path = modules/static-fun
 	url = https://github.com/vercel/static-fun.git

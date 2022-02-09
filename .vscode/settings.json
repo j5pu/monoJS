@@ -1,3 +1,9 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "favorites.resources": [
+        {
+            "filePath": "modules/install-node/vercel.json",
+            "group": "Default"
+        }
+    ]
 }
