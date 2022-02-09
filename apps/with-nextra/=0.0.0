@@ -1,0 +1,28 @@
+../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+ WARN  deprecated intl-messageformat-parser@1.8.1: We've written a new parser that's 6x faster and is backwards compatible. Please use @formatjs/icu-messageformat-parser
+ WARN  deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+../..                                    | Progress: resolved 416, reused 396, downloaded 0, added 0
+../..                                    |   +6   -2 +-
+../..                                    | Progress: resolved 918, reused 898, downloaded 0, added 0, done
+
+dependencies:
+- nextra-theme-docs 1.2.6
++ nextra-theme-docs 1.2.6
+
+devDependencies:
++ @types/react 17.0.39
+
+ WARN  Issues with peer dependencies found
+apps/with-nextra
+└─┬ nextra-theme-docs
+  ├─┬ @reach/skip-nav
+  │ ├── ✕ unmet peer react@^16.8.0: found 17.0.2
+  │ ├── ✕ unmet peer react-dom@^16.8.0: found 17.0.2
+  │ └─┬ @reach/utils
+  │   ├── ✕ unmet peer react@^16.8.0: found 17.0.2
+  │   └── ✕ unmet peer react-dom@^16.8.0: found 17.0.2
+  └─┬ next-themes
+    ├── ✕ unmet peer react@^16.13.1: found 17.0.2
+    ├── ✕ unmet peer react-dom@^16.13.1: found 17.0.2
+    └── ✕ unmet peer next@^9.5.5: found 12.0.10
+

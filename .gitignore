@@ -1,3 +1,6 @@
+# examples
+examples/*/
+
 # Logs
 **/logs
 **/*.log
