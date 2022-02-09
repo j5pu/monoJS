@@ -1,6 +1,6 @@
 .PHONY: bootstrap global prepare vercel
 
-GLOBAL := npm npx pnpm typescript vercel
+GLOBAL := npm npx pnpm @turbo/codemod typescript vercel
 
 
 bootstrap:
@@ -18,7 +18,7 @@ global:
 
 prepare: 
 	@pnpm add turbo -DW
-	@pnpx @turbo/codemod add-package pnpm
+	@pnpx @turbo/codemod add-package-manager pnpm
 	
 vercel: 
 	@#vercel login email
