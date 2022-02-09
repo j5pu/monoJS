@@ -18,7 +18,7 @@ global:
 
 prepare: 
 	@pnpm add turbo -DW
-	@pnpx @turbo/codemod add-package-manager pnpm
+	@pnpx @turbo/codemod add-package-manager
 	
 vercel: 
 	@#vercel login email
