@@ -1,5 +1,6 @@
 {
   "baseBranch": "origin/main",
+  "npmClient": "pnpm",
   "pipeline": {
     "build": {
       "dependsOn": [
@@ -10,15 +11,51 @@
         ".next/**"
       ]
     },
+    "browserlist": {
+      "outputs": []
+    },
+    "check": {
+      "outputs": []
+    },
+    "deploy": {
+      "dependsOn": [
+        "build", 
+        "test", 
+        "lint"
+      ]
+    },
     "dev": {
       "cache": false
     },
+    "install": {
+      "outputs": ["node_modules/**"]
+    },
     "lint": {
+      "outputs": []
+    },
+    "performance": {
+      "outputs": []
+    },
+    "start": {
+      "dependsOn": [
+        "^build",
+        "test",
+        "lint"
+      ],
+      "outputs": []
+    },
+    "telemetry": {
       "outputs": []
     },
     "test": {
         "dependsOn": ["^build"],
         "outputs": []
+    },
+    "update": {
+      "outputs": ["node_modules/**"]
+    },
+    "upgrade": {
+      "outputs": ["node_modules/**"]
     }
   }
 }

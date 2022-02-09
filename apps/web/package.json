@@ -2,12 +2,6 @@
   "name": "web",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
-  },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
@@ -15,13 +9,31 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^17.0.12",
-    "@types/react": "^17.0.37",
+    "@types/node": "^17.0.16",
+    "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "browserlist": "latest",
     "config": "workspace:*",
-    "eslint": "^7.32.0",
+    "eslint": "^8.8.0",
+    "lighthouse": "^9.3.1",
     "next-transpile-modules": "^9.0.0",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.5"
+  },
+  "packageManager": "pnpm@6.30.0",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "browserlist": "pnpx browserslist@latest --update-db -y --quiet",
+    "build": "next build",
+    "check": "ncu",
+    "dev": "next dev",
+    "lint": "next lint",
+    "performance": "lighthouse --output-path=./_lighthouse.html --view --save-assets https://mnopi.com",
+    "start": "next start",
+    "telemetry": "next telemetry disable",
+    "upgrade": "ncu -u"
   }
 }

@@ -19,6 +19,10 @@
 # misc
 .DS_Store
 *.pem
+graph-*.jpg
+*-profile.json 
+.pnpm-debug.log
+_lighthouse.html
 
 # Runtime data
 **/pids

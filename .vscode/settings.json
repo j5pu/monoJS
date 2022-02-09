@@ -4,6 +4,10 @@
         {
             "filePath": "modules/install-node/vercel.json",
             "group": "Default"
+        },
+        {
+            "filePath": "Makefile",
+            "group": "Default"
         }
     ]
 }

@@ -1,0 +1,98 @@
+# API
+
+## [git](https://mnopi.com/api/git)
+
+| Field | Values[^1] | Index[^2] or Key | Description |
+|---|---|
+| [index](https://docs.github.com/en/rest/reference) | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples), **[search](https://docs.github.com/en/rest/reference/search)**, [users](https://docs.github.com/en/rest/reference/users#get-a-user--code-samples) | N/A | Field from GitHub API |
+| **formula** | **0**, 1 | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples) | Generate values for homebrew formula |
+| **key** | | | Key from json `response.data`, or [search](https://docs.github.com/en/rest/reference/search) |
+| | **repositories**, ... | [search](https://docs.github.com/en/rest/reference/search) | |
+| | **description**, ...[^3] | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples) | |
+| | login, **id**, type, email, html_url, ... | [users](https://docs.github.com/en/rest/reference/users#get-a-user--code-samples) | |
+| **latest** | **0**, 1 | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples) | Latest archive releases or tag url |
+| **log** | **0**, 1 | ... | Console log |
+| **map** | **name** | **search[repositories]** | Additional key for json lists in `response.data` |
+| **owner** | **j5pu**, ... | repos, users | Username or repo owner |
+| **q** | **q=homebrew-+user:j5pu** | **repositories** | Query for *search*  |
+| **repo** | **action**, ... | repos | Repository name |
+| **sha256** | **0**, 1 | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples) | sha256 for *latest* |
+| **tag** | **0**, 1 | [repos](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples) | Latest tag |
+
+`curl -fsSL "https://mnopi.com/api/git?ref=<value>&owner=<value>"`
+
+[^1]: Possible values for field (default in bold).
+[^2]: [API reference](https://docs.github.com/en/rest/reference) *Index* or *Key* that the field applies.
+[^3]: Examples [keys](https://docs.github.com/en/rest/reference/repos#get-a-repository--code-samples)
+  *id*: 1296269,
+  *full_name*: "octocat/Hello-World",
+  *html_url*: `https://github.com/octocat/Hello-World`,
+  *private*: "true" or "false",
+  *git_tags_url*: `https://api.github.com/repos/octocat/Hello-World/git/tags{/sha}`,
+  *git_url*: `git:github.com/octocat/Hello-World.git`,
+  *releases_url*: `https://api.github.com/repos/octocat/Hello-World/releases{/id}`,
+  *ssh_url*: `git@github.com:octocat/Hello-World.git`,
+  *tags_url*: `https://api.github.com/repos/octocat/Hello-World/tags`,
+  *clone_url*: `https://github.com/octocat/Hello-World.git`,
+  *homepage*: `https://github.com`,
+  *size*: 108,
+  *default_branch*: "master",
+  *visibility*: "public",
+  *license*: "key": "mit", "name": "MIT License", "spdx_id": "MIT", ...
+  *organization*: "login": "octocat", "id": "1", ...
+
+### [repos](https://mnopi.com/api/git?index=repos)
+
+#### formula (uses releases)
+```bash
+curl -fsSL "https://mnopi.com/api/git?formula=1"
+```
+
+#### formula for python/cpython (uses tag)
+```bash
+curl -fsSL "https://mnopi.com/api/git?formula=1&owner=python&repo=cpython"
+```
+
+
+### [search](https://mnopi.com/api/git?index=search)
+```bash
+curl -fsSL "https://mnopi.com/api/git"
+curl -fsSL "https://mnopi.com/api/git?formula=1"
+curl -fsSL "https://mnopi.com/api/git?index=search&q=homebrew-+user:homebrew"
+```
+
+#### taps
+```bash
+curl -fsSL "https://mnopi.com/api/git"
+curl -fsSL "https://mnopi.com/api/git?log=1"
+curl -fsSL "https://mnopi.com/api/git?index=search&q=homebrew-+user:homebrew"
+```
+
+#### repos with "cmd", in user "j5pu"
+```bash
+curl -fsSL "https://mnopi.com/api/git?index=search&q=cmd+user:j5pu"
+```
+
+#### repos starting with "cmd", in user "j5pu"
+```bash
+curl -fsSL "https://mnopi.com/api/git?index=search&q=^cmd+user:j5pu"
+```
+
+### [user](https://mnopi.com/api/git?index=user)
+
+#### id
+```bash
+curl -fsSL "https://mnopi.com/api/git?index=user"
+curl -fsSL "https://mnopi.com/api/git?log=1"
+curl -fsSL "https://mnopi.com/api/git?index=search&q=homebrew-+user:homebrew"
+```
+
+#### repos with "cmd", in user "j5pu"
+```bash
+curl -fsSL "https://mnopi.com/api/git?index=search&q=cmd+user:j5pu"
+```
+
+#### repos starting with "cmd", in user "j5pu"
+```bash
+curl -fsSL "https://mnopi.com/api/git?index=search&q=^cmd+user:j5pu"
+```
