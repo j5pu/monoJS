@@ -1,3 +1,6 @@
 packages:
   - "apps/*"
+  - "examples/external/*"
+  - "examples/nextjs/*/*"
   - "packages/*"
+  - "vercel/*/*"

@@ -8,6 +8,62 @@
         {
             "filePath": "Makefile",
             "group": "Default"
+        },
+        {
+            "filePath": "modules/git-hooks",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/fun",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/examples",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/micro",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/micro-dev",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/nextjs/examples",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/pkg",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/platforms",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/rcurl/Readme.md",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/serve",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/serve-handler",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/stripe-integration",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/nextjs/test/integration/file-serving",
+            "group": "Default"
+        },
+        {
+            "filePath": "modules/nextjs/test/integration/filesystempublicroutes",
+            "group": "Default"
         }
     ]
 }

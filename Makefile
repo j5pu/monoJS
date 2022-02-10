@@ -48,7 +48,7 @@ upgrade:
 
 ############################
 vercel: 
-	@#vercel login email
+	@#vercel login --github
 	@vercel ls 
 	@vercel ls mnopi 
 	@vercel inspect mnopi.vercel.app
