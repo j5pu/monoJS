@@ -1,0 +1,114 @@
+[submodule "modules/next.js"]
+	path = modules/next.js
+	url = https://github.com/vercel/next.js.git
+[submodule "modules/vercel"]
+	path = modules/vercel
+	url = https://github.com/vercel/vercel.git
+[submodule "modules/commerce"]
+	path = modules/commerce
+	url = https://github.com/vercel/commerce.git
+[submodule "modules/swr"]
+	path = modules/swr
+	url = https://github.com/vercel/swr.git
+[submodule "modules/examples"]
+	path = modules/examples
+	url = https://github.com/vercel/examples.git
+[submodule "modules/platforms"]
+	path = modules/platforms
+	url = https://github.com/vercel/platforms.git
+[submodule "modules/static-fun"]
+	path = modules/static-fun
+	url = https://github.com/vercel/static-fun.git
+[submodule "modules/vrs"]
+	path = modules/vrs
+	url = https://github.com/vercel/vrs.git
+[submodule "modules/ncc"]
+	path = modules/ncc
+	url = https://github.com/vercel/ncc.git
+[submodule "modules/pkg"]
+	path = modules/pkg
+	url = https://github.com/vercel/pkg.git
+[submodule "modules/nextjs-subscription-payments"]
+	path = modules/nextjs-subscription-payments
+	url = https://github.com/vercel/nextjs-subscription-payments.git
+[submodule "modules/next-learn"]
+	path = modules/next-learn
+	url = https://github.com/vercel/next-learn.git
+[submodule "modules/pkg-fetch"]
+	path = modules/pkg-fetch
+	url = https://github.com/vercel/pkg-fetch.git
+[submodule "modules/nextjs-discord-bot"]
+	path = modules/nextjs-discord-bot
+	url = https://github.com/vercel/nextjs-discord-bot.git
+[submodule "modules/serve-handler"]
+	path = modules/serve-handler
+	url = https://github.com/vercel/serve-handler.git
+[submodule "modules/release"]
+	path = modules/release
+	url = https://github.com/vercel/release.git
+[submodule "modules/next-rsc-demo"]
+	path = modules/next-rsc-demo
+	url = https://github.com/vercel/next-rsc-demo.git
+[submodule "modules/fetch-cached-dns"]
+	path = modules/fetch-cached-dns
+	url = https://github.com/vercel/fetch-cached-dns.git
+[submodule "modules/fun"]
+	path = modules/fun
+	url = https://github.com/vercel/fun.git
+[submodule "modules/async-retry"]
+	path = modules/async-retry
+	url = https://github.com/vercel/async-retry.git
+[submodule "modules/fetch"]
+	path = modules/fetch
+	url = https://github.com/vercel/fetch.git
+[submodule "modules/fetch-retry"]
+	path = modules/fetch-retry
+	url = https://github.com/vercel/fetch-retry.git
+[submodule "modules/micro"]
+	path = modules/micro
+	url = https://github.com/vercel/micro.git
+[submodule "modules/preview-mode-demo"]
+	path = modules/preview-mode-demo
+	url = https://github.com/vercel/preview-mode-demo.git
+[submodule "modules/serve"]
+	path = modules/serve
+	url = https://github.com/vercel/serve.git
+[submodule "modules/next-server-components"]
+	path = modules/next-server-components
+	url = https://github.com/vercel/next-server-components.git
+[submodule "modules/arg"]
+	path = modules/arg
+	url = https://github.com/vercel/arg.git
+[submodule "modules/test-listen"]
+	path = modules/test-listen
+	url = https://github.com/vercel/test-listen.git
+[submodule "modules/micro-dev"]
+	path = modules/micro-dev
+	url = https://github.com/vercel/micro-dev.git
+[submodule "modules/rcurl"]
+	path = modules/rcurl
+	url = https://github.com/vercel/rcurl.git
+[submodule "modules/async-sema"]
+	path = modules/async-sema
+	url = https://github.com/vercel/async-sema.git
+[submodule "modules/release-auth"]
+	path = modules/release-auth
+	url = https://github.com/vercel/release-auth.git
+[submodule "modules/next-plugins"]
+	path = modules/next-plugins
+	url = https://github.com/vercel/next-plugins.git
+[submodule "modules/git-hooks"]
+	path = modules/git-hooks
+	url = https://github.com/vercel/git-hooks.git
+[submodule "modules/commerce-framework"]
+	path = modules/commerce-framework
+	url = https://github.com/vercel/commerce-framework.git
+[submodule "modules/stripe-integration"]
+	path = modules/stripe-integration
+	url = https://github.com/vercel/stripe-integration.git
+[submodule "modules/remark-capitalize"]
+	path = modules/remark-capitalize
+	url = https://github.com/vercel/remark-capitalize.git
+[submodule "modules/turborepo"]
+	path = modules/turborepo
+	url = https://github.com/vercel/turborepo.git
